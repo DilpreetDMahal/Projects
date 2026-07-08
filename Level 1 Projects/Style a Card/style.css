@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+h2 + p{
+    font-weight:700;
+}
+
+
+/* Best Practises:
+1. Always use box sizing as border box to avoid size issues.
+2. Use padding for inner spacing not margins
+3. Use margins to separate elements.
+4. Keep border styles consistent across the site.
+5. Use box shadow for a professional look.
+*/
