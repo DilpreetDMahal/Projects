@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="description" content="Community Event Signup">
+    <meta name="keywords" content="community, event, signup, celebration, screening">
+    <meta name="author" content="Dil">
+    <title>Community Event Signup</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\HTML\Mini_Projects\HTML_Essentials_3_Mini_Projects\Project_03_Event_Signup_Form\MENTEE\styles.css">
+  </head>
+  <body>
+    <!-- Header Section containing title and samll description -->
+    <header>
+      <h1>Word Cup 2026 Final Screening</h1>
+      <p><span style = "color: yellowgreen;">Celebration Square, Mississauga</span>, 14th July 5pm</p>
+    </header>
+    <!-- Main Section containg a event list, schedule table, and a signup form  -->
+    <main>
+      <!-- Main Section A containing an event list -->
+      <section class = "card">
+        <h2>Event Highlights</h2>
+        <ul>
+          <li>Pre-game Trivia</li>
+          <li>Foods and drinks</li>
+          <li>Face-painting</li>
+          <li>Live anthem sing along</li>
+          <li>Live screening</li>
+          <li>Post game analysis</li>
+          <li>Celebration</li>
+        </ul>
+        <p class ="small">Lists are important to list out vital points,
+          and to explain things briefly.
+        </p>
+      </section>
+      <!-- Main Section B with a Schedule Table -->
+      <section class="card">
+        <h2>Schedule</h2>
+        <!-- Table containing detail about the events -->
+         <table border = "3">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Activity</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17:00</td>
+              <td>Pre-game Trivia</td>
+              <td>Pre-game analysis, quizzes, face-paintings and games</td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td>Anthem sing along</td>
+              <td>Please be respectful during anthems</td>
+            </tr>
+            <tr>
+              <td>18:15</td>
+              <td>Screening begins</td>
+              <td>There will be two gaint screens, broadcasting the match</td>
+            </tr>
+            <tr>
+              <td>20:30</td>
+              <td>Post game celbration and analysis</td>
+              <td>A pseudo-trophy lift for the winning team fans and celebration</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Main Section C containing a Signup form -->
+      <section class="card">
+        <h3>Signup</h3>
+        <form>
+          <label for="name">Full name:</label>
+          <input type="text" id="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="ticket">Ticket:</label>
+          <select id="Category">
+            <option value="">Please Select</option>
+            <option value="">Kids(0-18)</option>
+            <option value="">Adults(18-60)</option>
+            <option value="">Seniors(60 & above)</option>
+          </select>
+          <p>Please select your Dietary preference</p>
+          <input type="radio" id="Vegan" >
+          <label for="Vegan">Vegan</label><br>
+          <input type="radio" id="Veg">
+          <label for="Veg">Vegetarian</label><br>
+          <input type="radio" id="nveg">
+          <label for="nveg">Non-vegetarian</label><br>
+          <input type="radio" id="other">
+          <label for="other">Others</label><br> 
+          <textarea name="Others" id="other" placeholder="If others, please give details"></textarea>     
+          <label for="notes">Message</label>
+          <textarea name="Extra Notes" id="notes" rows="5" cols="40" placeholder="Type Your Message Here...."></textarea> <br>
+          <input type="checkbox" id="terms"><br>
+          <label for="terms">Agree to Terms</label>
+          <button type="submit">Register</button>                   
+        </form>
+      </section>
+    </main>
+    <!-- Footer section containing SEO checklist -->
+    <footer>
+      <ol>
+        <li>Title is clear</li>
+        <li>Meta description exists</li>
+        <li>Headings are in order</li>
+      </ol>
+    </footer>
+  </body>
+</html>

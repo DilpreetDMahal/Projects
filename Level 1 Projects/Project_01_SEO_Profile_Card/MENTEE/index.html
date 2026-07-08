@@ -1,0 +1,116 @@
+<!-- Declare document as HTML 5 -->
+<!DOCTYPE html>
+<!-- This is the root element -->
+<html lang="en">
+  <head>
+    <!-- metadata about the page  -->
+      <meta charset = "UTF-8">
+      <meta name="viewport", content=""width=device-width, initial-scale="1.0">
+      <meta name ="description" content="A simple personal profile landing page to practise HTML structure">
+      <meta name = "keywords" content ="html, headingd, div/span, table, form">
+      <meta name="author" name ="Dil">
+      <!-- Title of the Webppage -->
+      <title>SEO Profiling Card</title>
+      <!-- CSS link -->
+      <link rel="stylesheet" href ="C:\Users\Admin\Desktop\HTML\Mini_Projects\HTML_Essentials_3_Mini_Projects\Project_01_SEO_Profile_Card\MENTEE\styles.css">
+
+  </head>
+  <body>
+    <!-- Creating a Structure for the page -->
+    <div class = "page">
+      <!-- Introduction -->
+      <header>
+        <h1>Dilpreet Mahal</h1>
+        <p>I am a <span style="color:yellow;background-color: black;">Instructor</span> learning full-stact development</p>
+      </header>
+      <br/>
+      <main>
+        <!-- Creating Structure within main -->
+        <div class="card">
+            <!-- About me section -->
+          <section class="card">
+            <h2>About</h2>
+              <p>I am a instructor teaching Data Analytics and Business intelligence looking to break into tech. 
+                I am learning the MERN stack, this right here is my first Mini project demonstrating HTML and CSS.
+              </p>
+          </section>
+          <!-- Skill Section -->
+          <section class="card">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Git</li>
+            </ul>
+            <p class="small">A side note, I am still learning these &#128513.</p>
+          </section>
+          <!-- Weekly targets -->
+          <section class = "card">
+            <h2>Weekly Focus</h2>
+            <table>
+              <!-- Header Section -->
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Topic</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <!-- Body Section -->
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>HTML essentials</td>
+                  <td>Done</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>HTML Semantics</td>
+                  <td>Planned</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>CSS</td>
+                  <td>Planned</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- Form Section to contact -->
+          <section class="card">
+            <h3>Contact</h3>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+              <br/>
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+              <br/>
+              <label for="Reason to contact">Reason to contact:</label>
+              <select id="Reason to contact">
+                <option value="">Please Select</option>
+                <option value="">Inquire &#128221</option>
+                <option value="">For interview &#128187</option>
+                <option value="">Coffee Chat &#9749</option>
+              </select>
+              <br/>
+              <label for="Message">Message:</label>
+              <textarea id="Message" name="message" rows="5" cols="40" placeholder="Type Your Message Here...."></textarea>
+              <br/>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </div>
+      </main>
+      <!-- Copyright -->
+      <footer>
+        <p>Made by *Dilpreet* 2026</p>
+        <ol>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">LinkedIN</a></li>
+          <li><a href="#">Github</a></li>
+        </ol>
+      </footer>
+    </div>
+  </body>
+</html>

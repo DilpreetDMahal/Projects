@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name ="viewport" content="width=device-width", initial-scale="1.0">
+     <meta name = "description" content ="A Recipe Planner">
+     <meta name = "keywords" content="Recipe,planner,table,list,ingredients,food,meals">
+     <meta name="author" content="Dil">
+     <title>Recipe Planner</title>
+     <link rel="stylesheet" href="C:\Users\Admin\Desktop\HTML\Mini_Projects\HTML_Essentials_3_Mini_Projects\Project_02_Recipe_Table_And_Lists\MENTEE\styles.css">
+    
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Recipe Planner</h1>
+      <p>This page create user a simple <span style = "color: red;">Recipe plan</span> for the day</p>
+    </header>
+
+  <!-- Main section -->
+    <main>
+      <!-- Main Section A using lists to make a meal plan -->\
+       <section class = "card">
+          <h2>Today's Plan</h2>
+          <h3>Meals</h3>
+          <ul>
+            <li><h4>Egg Sandwich</h4></li>
+            <ol>
+              <li>You will need two eggs, bread(of your choice),cheese, salt and pepper.</li>
+              <li>First cook your eggs as you like with seasoning.</li>
+              <li>Toast your bread in toaster, air-fryer or pan.</li>
+              <li>Then arrange your sandwich with egg and cheese in between bread.</li>
+            </ol>
+            <li><h4>Chicken Rice</h4></li>
+            <ol>
+              <li>For this meal, you will need chicken, rice, chicken broth, oil, onion, garlic and seasonings.</li>
+              <li> Toss the chicken with the spices. Heat the oil in a large skillet or Dutch oven over medium-high heat. Sear the chicken for 4 minutes per side until browned,
+                 then remove it and set aside.</li>
+              <li> In the same pan, add the onion and cook for 3-4 minutes until soft. Add the garlic and cook for 1 minute until fragrant.</li>
+              <li>Add the rinsed rice to the pan and stir for 1-2 minutes to toast it slightly, scraping up any delicious browned bits from the chicken.</li>
+              <li> Pour in the chicken broth and stir. Nestle the browned chicken back into the rice, bring to a gentle boil, then cover with a tight-fitting lid.
+                 Reduce the heat to low and let it steam undisturbed for 20 minutes. Remove from heat and let it rest for 5 minutes before serving!</li>
+            </ol>
+            <li><h4>Rice and Curry</h4></li>
+            <ol>
+              <li>Heat 1–2 tablespoons of oil or ghee in a large pot over medium heat. 
+                Add chopped onions and cook until translucent. Add minced garlic and grated ginger, 
+                stirring constantly for about 30–60 seconds until fragrant.</li>
+              <li>Add your spices (such as curry powder, turmeric, and cumin) and stir for 15–30 seconds to toast them. 
+                  Add your diced protein (chicken, beef, or vegetables) and stir until completely coated in the spiced oil and browned on the outside.</li>
+              <li>Pour in your liquids, which can be a combination of chicken or vegetable broth, coconut milk, or tomato paste. Bring to a gentle simmer, 
+                then turn the heat to medium-low. Cover and let the curry cook until the meat is tender and the sauce is thick (usually 15–25 minutes).</li>
+              <li>While the curry simmers, rinse your rice (like basmati or jasmine) under cold water until it runs clear.
+                 Cook the rice separately using your preferred method (a typical ratio is 1 part rice to 2 parts water). Serve the freshly cooked rice alongside or underneath the rich curry sauce.</li>
+            </ol>
+          </ul>
+       </section>
+       <!-- Main Section B adding an Ingredients Table -->
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Ingredients</th>
+                <th>Amount</th>
+                <th>Subsitutes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chicken</td>
+                <td>250-300g Uncooked</td>
+                <td>Beef, tofu, eggs</td>
+              </tr>
+              <tr>
+                <td>Eggs</td>
+                <td>3-4</td>
+                <td>Tofu, vegetables</td>
+              </tr>
+              <tr>
+                <td>Onion, garlic cloves,ginger</td>
+                <td>2-3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>White Rice</td>
+                <td>100g uncooked</td>
+                <td>Brown Rice, Quinoa</td>
+              </tr>
+              <tr>
+                <td>Oil</td>
+                <td>30-40ml</td>
+                <td>Butter, Ghee</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <!--Main Section C adding a Form  -->
+        <section class ="card">
+          <h2>Shopping Note</h2>
+          <form>
+            <label for="item">Item:</label>
+            <input type="text" id="item" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <label for="Category">Category:</label>
+            <select id="Category">
+              <option value="">Please Select</option>
+              <option value="">Produce</option>
+              <option value="">Dairy</option>
+              <option value="">Protein</option>
+              <option value="">Other</option>
+            </select>
+            <label for="notes">Extra Notes:</label>
+            <textarea name="Extra Notes" id="notes" rows="5" cols="40" placeholder="Type Your Message Here...."></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <p class="small">A Recipe Planner</p>
+    </footer>
+  </body>
+</html>
