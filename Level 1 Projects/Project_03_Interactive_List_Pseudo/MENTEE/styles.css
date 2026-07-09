@@ -26,6 +26,9 @@
   3. This spacing should make the text easier to read
      and increase the interactive area.
 */
+li{
+   padding:5px;
+}
 
 /* ===============================
    STEP 2 — Hover Interaction (:hover)
@@ -37,6 +40,9 @@
      the user’s mouse is over the item.
   3. This visually shows that the item is interactive.
 */
+li:hover{
+   background-color: #f4f4f4;
+}
 
 /* ===============================
    STEP 3 — Focus Interaction (:focus)
@@ -51,6 +57,10 @@
   4. NOTE: <li> elements must be focusable in HTML
      using tabindex="0".
 */
+li[tabindex="0"]:focus{
+   outline: 3px solid #0056b3;
+   background-color: aquamarine;
+}
 
 /* ===============================
    STEP 4 — First Item Styling (:first-child)
@@ -62,6 +72,11 @@
   2. Make this item visually stronger than the others.
   3. This is commonly used to highlight priority items.
 */
+li:first-child{
+   font-size: 30px;
+   color: red;
+   font-weight: bolder;
+}
 
 /* ===============================
    STEP 5 — Last Item Styling (:last-child)
@@ -74,6 +89,10 @@
      or less emphasized.
   3. This helps create visual hierarchy.
 */
+li:last-child{
+   color: #0056b3;
+   font-style: italic;
+}
 
 /* ===============================
    STEP 6 — Targeting by Position (:nth-child)
@@ -86,6 +105,10 @@
   3. Apply a subtle background color.
   4. Remember: counting starts at 1, not 0.
 */
+li:nth-child(2)
+{
+   background-color: antiquewhite;
+}
 
 /* ===============================
    STEP 7 — Adding Content Before (::before)
@@ -110,6 +133,9 @@
   2. The inserted content should be visually subtle.
   3. This is often used for icons or indicators.
 */
+li::after{
+   content :".";
+}
 
 /* ===============================
    STEP 9 — Styling the First Letter (::first-letter)
@@ -121,6 +147,9 @@
   2. Increase the size of the first letter slightly.
   3. This creates a typographic emphasis effect.
 */
+li::first-letter{
+   font-size: 50px;
+}
 
 /* ===============================
    STEP 10 — Styling the First Line (::first-line)
@@ -133,12 +162,7 @@
   3. The first line depends on screen size
      and container width.
 */
+li::first-line{
+   font-weight: bolder;
+}
 
-/*
-  ✅ After completing all steps:
-  - Save the file
-  - Refresh the browser
-  - Test hover with mouse
-  - Test focus with Tab key
-  - Resize the browser to observe ::first-line behavior
-*/
