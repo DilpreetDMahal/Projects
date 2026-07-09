@@ -1,0 +1,42 @@
+/*
+  🧠 PROJECT: Profile Card — Basic Selectors
+
+  IMPORTANT:
+  - After each step, save and refresh the browser.
+*/
+
+/* STEP 1 — Universal selector */
+*{
+  margin: 10px;
+  padding: 10px;
+  box-sizing : border-box;
+}
+
+
+/* STEP 2 — Element selectors */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+h1{
+  color: red;
+}
+
+/* STEP 3 — Class selectors */
+
+.card{
+  padding: 10px;
+  border: 2px solid black;
+  width: fit-content;
+}
+.role{
+  font-style: italic;
+}
+.bio {
+  font-weight: bold;
+}
+
+/* STEP 4 — ID selector */
+#name{
+  font-size: 100;
+}
