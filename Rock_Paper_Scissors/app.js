@@ -98,7 +98,7 @@ function playGame(rounds){
         Computer Score: ${computerScore}
         Human Score : ${humanScore}
         It is a tie`); 
-
+    }
 }
 
 playGame(5);
